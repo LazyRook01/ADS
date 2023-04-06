@@ -20,7 +20,7 @@ st.subheader("Harsh Jani | Faizan Siddiqi | Gaurav Ojha | Gaurav Patil | Jay Bha
 st.write("This app displays visualizations of COVID-19 data.")
 
 # Create a sidebar menu to select visualization type
-visualization_type = st.sidebar.selectbox("Select Visualization Type", options=["Bar Plot", "Line Plot", "Scatter Plot", "Month-wise Line Plot"])
+visualization_type = st.sidebar.selectbox("Select Visualization Type", options=["Bar Plot","Month-wise Line Plot"])
 
 # Filter the data based on selected countries
 selected_countries = st.sidebar.multiselect("Select countries", df['Country/Region'].unique(), default=("India"))
